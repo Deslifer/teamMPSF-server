@@ -6,7 +6,7 @@ const taskSchema = new Schema({
     type: String,
     trim: true,
   },
-  mail: {
+  user: {
     type: String,
     trim: true,
   },

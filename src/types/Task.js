@@ -9,12 +9,12 @@ module.exports = gql`
   }
   input CreateTaskInput {
     title: String!
-    mail: String!
+    user: String!
     description: String!
   }
   input UpdateTaskInput {
     title: String
-    mail: String
+    user: String
     description: String
   }
   input DeleteTaskInput {
