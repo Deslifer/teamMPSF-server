@@ -4,17 +4,17 @@ module.exports = gql`
   type Task {
     id: ID!
     title: String!
-    user: String!
+    mail: String!
     description: String!
   }
   input CreateTaskInput {
     title: String!
-    user: String!
+    mail: String!
     description: String!
   }
   input UpdateTaskInput {
     title: String
-    user: String
+    mail: String
     description: String
   }
   input DeleteTaskInput {
