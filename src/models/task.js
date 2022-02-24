@@ -6,6 +6,10 @@ const taskSchema = new Schema({
     type: String,
     trim: true,
   },
+  mail: {
+    type: String,
+    trim: true,
+  },
   description: {
     type: String,
     trim: true,
