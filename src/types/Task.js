@@ -4,7 +4,7 @@ module.exports = gql`
   type Task {
     id: ID!
     title: String!
-    mail: String!
+    user: String!
     description: String!
   }
   input CreateTaskInput {
