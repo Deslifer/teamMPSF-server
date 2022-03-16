@@ -13,6 +13,7 @@ module.exports = gql`
     description: String!
   }
   input UpdateTaskInput {
+    id: String!
     title: String
     mail: String
     description: String
@@ -28,7 +29,7 @@ module.exports = gql`
   }
   type Mutation {
     createTask(input: CreateTaskInput!): Task!
-    updateTask(id: String!, input: UpdateTaskInput!): Task!
-    deleteTask(input: DeleteTaskInput!): Task!
+    updateTask(input: UpdateTaskInput!): Task!
+    deleteTask(input: DeleteTaskInput!): DeletePayload!
   }
 `;
