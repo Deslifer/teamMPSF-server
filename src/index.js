@@ -14,6 +14,7 @@ const server = new ApolloServer({
   resolvers,
   context: {models},
   playground: true,
+  introspection: true,
 });
 
 server.listen({port: process.env.PORT || 3000}).then(({url}) => {
