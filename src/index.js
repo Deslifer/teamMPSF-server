@@ -13,8 +13,7 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: {models},
-  playground: true,
-  introspection: true,
+  plugins: [ApolloServerPluginLandingPageGraphQLPlayground()],
 });
 
 server.listen({port: process.env.PORT || 3000}).then(({url}) => {
