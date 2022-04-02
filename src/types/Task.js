@@ -1,22 +1,26 @@
 const {gql} = require('apollo-server');
 
 module.exports = gql`
+  scalar Date
   type Task {
     id: String!
     title: String!
     mail: String!
     description: String!
+    date: Date
   }
   input CreateTaskInput {
     title: String!
     mail: String!
     description: String!
+    date: Date
   }
   input UpdateTaskInput {
     id: String!
     title: String
     mail: String
     description: String
+    date: Date
   }
   input DeleteTaskInput {
     id: String!
@@ -24,6 +28,7 @@ module.exports = gql`
   type DeletePayload {
     id: String!
   }
+
   type Query {
     tasks: [Task]
   }

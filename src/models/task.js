@@ -14,6 +14,10 @@ const taskSchema = new Schema({
     type: String,
     trim: true,
   },
+  date: {
+    type: Date,
+    trim: true,
+  },
 });
 
 const Task = mongoose.model('Task', taskSchema);
